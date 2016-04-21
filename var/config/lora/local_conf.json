@@ -1,0 +1,28 @@
+{
+    /* Put there parameters that are different for each gateway 
+     * (eg. pointing one gateway to a test server while the others stay in production) */
+    /* Settings defined in global_conf will be overwritten by those in local_conf */
+    "gateway_conf": {
+        /* you must pick a unique 64b number for each gateway (represented by an hex string) */
+        "gateway_ID": "008000000000AAAA", /* <--- change me */
+        /* Email of gateway operator, max 40 chars*/
+        "contact_email": "me@mail.com", /* <--- change me */
+        /* Public description of this device, max 64 chars */
+        "description": "My TTN Gateway", /* <--- change me */
+        /* Enter VALID GPS coordinates below before enabling fake GPS */
+        "fake_gps": true,
+        "ref_latitude": 0, /* <--- change me */
+        "ref_longitude": 0, /* <--- change me */
+        "ref_altitude": 0, /* <--- change me */
+        "server_address":"router.us.thethings.network",
+        "forward_crc_disabled":true,
+        "forward_crc_error":false,
+        "forward_crc_valid":true,
+        "keepalive_interval":12,
+        "push_timeout_ms":120,
+        "serv_port_down" : 1700,
+        "serv_port_up" : 1700,
+        "stat_interval" : 20,
+        "synch_word" : 52     
+    }
+}
